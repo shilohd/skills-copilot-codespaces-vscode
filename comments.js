@@ -1,7 +1,7 @@
 //create web server 
-//create web server 
-var express = require('express');
-var app = express();
-app.use(express.static(__dirname + '/public'));
-app.listen(8000);
-console.log('Server running at http://
+const express = require('express');                                                             
+const app = express();
+const fs = require('fs');
+const path = require('path');
+const bodyParser = require('body-parser');
+const port = 3000;
